@@ -1,4 +1,5 @@
 #Passos antes de utilizar: 
+
 Instalar as bibliotecas de autenticação para APIs do Google, através do comando:
 pip install --upgrade google-api-python-client google-auth-httplib2 google-auth-oauthlib
 
@@ -8,6 +9,7 @@ e é recomendado deletar o token, arquivos ‘token_drive_v3.pickle’ e ‘clie
 
 
 #Upload file
+
 Pode ser feito através da execução do arquivo ‘UploadFile.py’
 O programa vai subir todos os arquivos em ‘upload_folder’ para a pasta do Google Drive especificada.
 A pasta do Google Drive para onde os arquivos serão enviados pode ser identificada pelo ID da pasta, que é visto na URL da página ao abrir a pasta no Google Drive.
@@ -16,6 +18,7 @@ Onde o ID está depois de ‘...folder/’.
 OBS: Tal ID também pode ser adquirido através de uma Query, assunto que será abordado na parte de Download.
 
 #Download file
+
 Pode ser feito através da execução do arquivo ‘DownloadFile.py’
 O programa vai fazer o download de todos os arquivos no Google Drive especificados através das queries, para a pasta ‘download_folder’.
 Uma observação importante é o Google utiliza dois métodos diferentes para fazer o download de arquivos com tipos próprios do Google e arquivos com tipos genéricos, 
